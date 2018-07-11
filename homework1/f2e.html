@@ -5,68 +5,40 @@
 	<title>前端測驗</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/typeSetting.css">
 </head>
 
-<style>
-	
-.center
-{
-	margin-left: 400px;
-	margin-top: 100px;
-	background-color: #009FCC;
-	color:white;
-}
 
-.img
-{
-	width:60px;
-	border-radius: 50%;
-}
-
-#left
-{
-	background-color:#AAAAAA;
-	width:250px;
-	height: 250px;
-}
-
-#right
-{
-	background-color: #AAAAAA;
-	width: 250px;
-	height: 250px;
-	margin-left: 650px;
-}
-</style>
 
 
 <body>
 	<h1>前端測驗</h1>
 	<section>
 		<p>1. 同一列，分別置左、置右兩個正方形</p>
-	<div id="left"><div id="right"></div></div>
-	
+			<div class="left" ></div><div class="right"></div>
+						<!--上方寫法 代表同一階層-->
 
 	</section>
 	<section>
 		<p>2. 藍底白字按鈕，置中外框，點擊連結到運動筆記</p>
-	<a href="http://tw.running.biji.co/"><button type="submit" class="center">運動筆記</button></a>
+			<a href="http://tw.running.biji.co/" class="center">運動筆記</a>
+			
 	</section>
 	<section>
 		<p>3. 兩列頭像，一列4個</p>
 
-
-		<p>
-		<img src="avatar.jpg" alt="咖波" class="img">
-		<img src="avatar.jpg" alt="咖波" class="img">
-		<img src="avatar.jpg" alt="咖波" class="img">
-		<img src="avatar.jpg" alt="咖波" class="img">
-		</p>
-		<img src="avatar.jpg" alt="咖波" class="img">
-		<img src="avatar.jpg" alt="咖波" class="img">
-		<img src="avatar.jpg" alt="咖波" class="img">
-		<img src="avatar.jpg" alt="咖波" class="img">
-
+		<div>
+			<img src="avatar.jpg" alt="咖波" >
+			<img src="avatar.jpg" alt="咖波" >
+			<img src="avatar.jpg" alt="咖波" >
+			<img src="avatar.jpg" alt="咖波" >
+		</div>
+		<div>
+			<img src="avatar.jpg" alt="咖波" >
+			<img src="avatar.jpg" alt="咖波" >
+			<img src="avatar.jpg" alt="咖波" >
+			<img src="avatar.jpg" alt="咖波" >
+		</div>
 
 	</section>
 </body>
