@@ -3,26 +3,23 @@ section {
   height: 500px;
   width: 1300px;
   background-color: #DDDDDD;
-  position: relative; }
-
-.Box {
-  padding: 0;
-  display: block; }
-
+  }
 .BigBox {
-  padding: 10px;
   float: left;
-  display: block; }
-
-.colMiddle {
-  margin-top: 1%;
-  float: left;
-  display: block; }
-
-.colRight {
-  margin-top: 1%;
+  width: 50%;
+  height: 90%;
+  display: block;
+  background-color: #AAAAAA;
+   }
+.Box {
+  width: 24%;
+  height: 44%;
+  float:left;
   margin-left: 10px;
-  float: left;
-  display: block; }
-
-/*# sourceMappingURL=practice.css.map */
+  display: block;
+  background-color: black;
+}
+.down
+{
+  margin-top: 10px;
+}
