@@ -1,25 +1,76 @@
 section {
+  /*總版面*/
   margin: 120px auto auto auto;
   height: 500px;
   width: 1300px;
   background-color: #DDDDDD;
   }
+
+p
+{
+  /*大圖標題*/
+  color:white;
+  font-size: 35px;
+  position: absolute;
+  top:300px;
+  left: 40px;
+  width: 500px;
+}
+
+.content
+{
+  /*大圖內容*/
+  font-size: 23px;
+  margin-top: 80px;
+}
+
+.smallTitle
+{
+  /*小圖標題*/
+  font-size: 20px;
+  position: absolute;
+  top:150px; 
+  left:20px;
+  width: 300px;
+}
+
 .BigBox {
+  /*大圖位置*/
   float: left;
-  width: 50%;
+  width:calc(50% - 10px);
   height: 90%;
   display: block;
   background-color: #AAAAAA;
+  background-image: url("cover.jpg");
+  background-size: cover;/*圖片完整縮放*/
+  position: relative;
    }
+
 .Box {
-  width: 24%;
-  height: 44%;
+  /*小圖位置*/
+  width:calc(25% - 5px);
+  height: calc(45% - 5px);
   float:left;
-  margin-left: 10px;
+  margin-left:10px ;
   display: block;
-  background-color: black;
+  background-image: url("cover.jpg");
+  background-size: cover;/*圖片完整縮放*/
+  position: relative;
 }
+.Box:before,.BigBox:Before{
+  content: '';/*必須*/
+  position: absolute;
+  top: 0;/*四邊縮放距離*/
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0),rgba(0,0,0,0.6));/*漸層語法 (方向,初始顏色,結束顏色)*/
+  opacity:0.6; 
+}
+
 .down
 {
+  /*小圖上方縮排*/
   margin-top: 10px;
 }
+
