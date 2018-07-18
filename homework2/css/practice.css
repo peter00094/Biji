@@ -20,9 +20,10 @@ p{
   color:white;
   font-size: 33px;
   position: absolute;
-  bottom:5px;
-  left: 40px;
-  width: 90%;
+  bottom:0px;
+  left: 0px;
+  width: 100%;
+  padding:10px; /*與邊框的留白 不需要用margin去計算width的寬度*/
   font-family: Microsoft JhengHei;/*字體*/
 }
 
@@ -41,8 +42,6 @@ p{
   /*小圖標題*/
   font-size: 18px;
   position: absolute;
-  left:7px;
-  width: 100%;
 }
 
 .BigBox {
@@ -51,7 +50,7 @@ p{
   width:calc(50% - 10px);
   height: 90%;
   display: block;
-  background-image: url("cover.jpg");
+  background-image: url("../image/cover.jpg");
   background-size: cover;/*圖片完整縮放*/
   position: relative;
  border-radius: 5px;
@@ -64,7 +63,7 @@ p{
   float:left;
   margin-left:10px ;
   display: block;
-  background-image: url("cover.jpg");
+  background-image: url("../image/cover.jpg");
   background-size: cover;/*圖片完整縮放*/
   position: relative;
   border-radius:5px;/*四角縮放*/
@@ -86,15 +85,21 @@ p{
   margin-top: 10px;  /*小圖上方縮排*/
 }
 /*rwd*/
-@media (max-width: 500px){
+@media only screen and (max-width: 500px){
+  section{
+    padding:0 10px;/*與螢幕兩邊的留白*/
+    width: 100%;/*滿寬*/
+  }
+
   .BigBox{
-    width:calc(25% - 5px);
+    width:100%;/*滿寬*/
     height: calc(45% - 5px);
     float:none;
-    margin-left: 10px;
   }
   .Box{
-  
+    margin-left: 0px;/*去除原本滿版向左的留白*/
+    width:100%;/*滿寬*/
+    height: calc(45% - 5px);
     margin-top:10px;
     float:none;
   }
