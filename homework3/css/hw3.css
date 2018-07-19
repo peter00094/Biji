@@ -2,18 +2,14 @@ section
 {/*總版面*/
 	margin:0 auto;
 	width: 960px;
-	background-color: #f4f4f4;
-}
-
-p
-{/*字體統一*/
 	font-family: Microsoft JhengHei;
+	font-weight: lighter;
+	background-color: #f4f4f4;
 }
 
 a
 {/*超連結顏色*/
 	color: black;
-	text-decoration:none;
 }
 
 .box1
@@ -22,21 +18,19 @@ a
 	height: auto;
 }
 
-.box1 > .title
+.title
 {/*example.jpg以上標題*/
 	font-size: 40px;
-	font-weight: lighter;
 }
 
-.box1 > .content
+.content
 {/*example.jpg以上內文*/
 	margin-top: 20px;
-	font-weight: lighter;
 	font-size: 28px;
 	line-height: 1.5;
 }
 
-.box1 > .mail
+.mail
 {
 	font-weight: bold;
 	font-size: 28px;
@@ -49,12 +43,12 @@ a
 	margin-right: 115px;
 }
 
-.box2 > .title_subject
+.title_subject
 {/*圖片"購買方案"*/
 	width: 320px;
 }
 
-.box2 > .subject1
+.subject1
 {/*方案一*/
 	display: block;
 	margin-top: 80px;
@@ -62,7 +56,7 @@ a
 	margin-left: 55px;
 }
 
-.box2 > .content1
+.content1
 {/*第一行文字*/
 	margin-top: 25px;
 	font-size: 48px;
@@ -70,7 +64,7 @@ a
 	margin-left: 55px;
 }
 
-.box2 > .content2
+.content2
 {/*第二行文字*/
 	margin-top: 20px;
 	font-size: 30px;
@@ -78,19 +72,17 @@ a
 	margin-left: 55px;
 }
 
-.box2 > .content3
+.content3
 {/*第三行文字*/
 	margin-top: 30px;
 	font-size: 28px;
-	font-weight: lighter;
 	margin-left: 55px;
 }
 
-.box2 > .content4
+.content4
 {/*第四行文字*/
 	margin-top: 15px;
 	font-size: 28px;
-	font-weight: lighter;
 	margin-left: 55px;
 }
 
@@ -100,7 +92,7 @@ a
 	width: 250px;
 }
 
-.box2 > .subject2
+.subject2
 {/*方案二*/
 	display: block;
 	margin-top: 65px;
@@ -108,7 +100,7 @@ a
 	margin-left: 55px;
 }
 
-.box2 > .title_info
+.title_info
 {/*圖片"購買資訊"*/
 	width: 320px;
 	margin-top: 135px;
@@ -119,10 +111,10 @@ a
 	margin-top: 60px;
 	margin-left: 40px;
 	margin-right: -10px;
+	margin-bottom: 50px;
 }
 .box3 > p
 {/*購買資訊內容*/
-	font-weight: lighter;
 	font-size: 28px;
 	line-height: 2;
 }
@@ -130,10 +122,13 @@ a
 .link1
 {/*聯絡我們 超連結*/
 	width: 960px;
-	margin-top: 105px;
 	text-align: center; 
-	font-weight: lighter;
 	font-size: 22px;
+}
+.wholeDown
+{/*下方整個區塊*/
+	padding-top: 55px;
+	background-color: white;
 }
 
 .down
@@ -142,10 +137,9 @@ a
 	margin-top: 25px;
 	justify-content: center;
 	margin-bottom: 50px;
-
+	align-items: flex-end;
 }
-
-.down > .down2
+.down2
 {/*logo右方區塊*/
 	margin-left: 40px;
 	height: auto;
@@ -157,11 +151,6 @@ a
 	width: 210px;
 }
 
-.down2
-{/*右方區塊向下對齊*/
-	align-self: flex-end;
-}
-
 .down2 img
 {/*FB logo大小*/
 	width: 17px;
@@ -169,13 +158,11 @@ a
 
 .down2 a
 {/*文字樣式*/
-	font-weight: lighter;
 	font-size-adjust: 14px;
 }
 
 .down2 p
 {/*文字樣式*/
-	font-weight: lighter;
 	font-size: 14px;
 	margin-top: 15px;
 }
