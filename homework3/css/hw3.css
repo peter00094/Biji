@@ -1,0 +1,181 @@
+section
+{/*總版面*/
+	margin:0 auto;
+	width: 960px;
+	background-color: #f4f4f4;
+}
+
+p
+{/*字體統一*/
+	font-family: Microsoft JhengHei;
+}
+
+a
+{/*超連結顏色*/
+	color: black;
+	text-decoration:none;
+}
+
+.box1
+{/*上半文字區塊四周留白*/
+	margin: 80px; 
+	height: auto;
+}
+
+.box1 > .title
+{/*example.jpg以上標題*/
+	font-size: 40px;
+	font-weight: lighter;
+}
+
+.box1 > .content
+{/*example.jpg以上內文*/
+	margin-top: 20px;
+	font-weight: lighter;
+	font-size: 28px;
+	line-height: 1.5;
+}
+
+.box1 > .mail
+{
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.box2
+{/*emxaple.jpg以下區塊*/
+	margin-top: 60px;
+	margin-left: 65px;
+	margin-right: 115px;
+}
+
+.box2 > .title_subject
+{/*圖片"購買方案"*/
+	width: 320px;
+}
+
+.box2 > .subject1
+{/*方案一*/
+	display: block;
+	margin-top: 80px;
+	width: 130px;
+	margin-left: 55px;
+}
+
+.box2 > .content1
+{/*第一行文字*/
+	margin-top: 25px;
+	font-size: 48px;
+	font-weight: normal;
+	margin-left: 55px;
+}
+
+.box2 > .content2
+{/*第二行文字*/
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: normal;
+	margin-left: 55px;
+}
+
+.box2 > .content3
+{/*第三行文字*/
+	margin-top: 30px;
+	font-size: 28px;
+	font-weight: lighter;
+	margin-left: 55px;
+}
+
+.box2 > .content4
+{/*第四行文字*/
+	margin-top: 15px;
+	font-size: 28px;
+	font-weight: lighter;
+	margin-left: 55px;
+}
+
+.btn1
+{/*右側"點我訂購"圖片*/
+	float:right;
+	width: 250px;
+}
+
+.box2 > .subject2
+{/*方案二*/
+	display: block;
+	margin-top: 65px;
+	width: 130px;
+	margin-left: 55px;
+}
+
+.box2 > .title_info
+{/*圖片"購買資訊"*/
+	width: 320px;
+	margin-top: 135px;
+}
+
+.box3
+{/*example.jpg以下區塊*/
+	margin-top: 60px;
+	margin-left: 40px;
+	margin-right: -10px;
+}
+.box3 > p
+{/*購買資訊內容*/
+	font-weight: lighter;
+	font-size: 28px;
+	line-height: 2;
+}
+
+.link1
+{/*聯絡我們 超連結*/
+	width: 960px;
+	margin-top: 105px;
+	text-align: center; 
+	font-weight: lighter;
+	font-size: 22px;
+}
+
+.down
+{/*最下方logo fb區塊*/
+	display: flex;
+	margin-top: 25px;
+	justify-content: center;
+	margin-bottom: 50px;
+
+}
+
+.down > .down2
+{/*logo右方區塊*/
+	margin-left: 40px;
+	height: auto;
+	width: auto;
+}
+
+.down img
+{/*logo大小*/
+	width: 210px;
+}
+
+.down2
+{/*右方區塊向下對齊*/
+	align-self: flex-end;
+}
+
+.down2 img
+{/*FB logo大小*/
+	width: 17px;
+}
+
+.down2 a
+{/*文字樣式*/
+	font-weight: lighter;
+	font-size-adjust: 14px;
+}
+
+.down2 p
+{/*文字樣式*/
+	font-weight: lighter;
+	font-size: 14px;
+	margin-top: 15px;
+}
