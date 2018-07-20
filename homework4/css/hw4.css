@@ -1,0 +1,182 @@
+body
+{/*總版面*/
+	background-color: #AAAAAA;
+	font-family: Microsoft JhengHei;
+}
+a:hover
+{	/*去除超連結底線*/
+	text-decoration: none;
+}
+section
+{
+	margin:49px auto auto auto;
+	height: 939px;
+	width: 780px;
+	background-color: white;
+}
+header
+{
+	width: 100%;
+	height: 130px;
+	background-color: white;
+}
+.placeHolder
+{
+	color:#bbb;
+}
+input::-webkit-input-placeholder {
+    color: #AAA;
+}
+
+input
+{/*input區塊 統一樣式*/
+-webkit-appearance: none;
+	width: 100%;
+	outline: none;
+	border: 1px solid #ddd;
+	font-size: 15px;
+	line-height: 1.4;
+	padding: 8px;
+	border-radius: 3px;
+}
+
+select
+{
+	display: inline-block;
+	padding: 0 13px;
+	width: 150px;
+	height: 35px;
+	font-size: 14px;
+	border:1px solid #ddd;
+	background-repeat: no-repeat;
+	background-image:url("../img/select_arrow.png");
+	background-position: calc(100% - 13px) 50%;
+	-webkit-appearance: none;
+}
+.left
+{
+	margin-left: 10px;
+}
+.must-icon
+{
+	font-size: 12px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Lucida Grande", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+	color: red;
+	font-weight: normal;
+}
+
+.iconColor
+{
+	color: #c8c8c8;
+}
+.titleBlock
+{/*"提供新路線"區塊*/
+	height: 80px;
+	width: 100%;
+	background-color: #f3f3f3;
+	padding: 20px 35px;
+}
+
+.iconContent
+{/*"左方文字+icon*/
+
+	color: #6f7b8a;
+	display: inline;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.btn
+{/*右方按鈕*/
+	margin-top: 0px;
+	width: 100px;
+	height: 40px;
+	border-radius: 3px;
+	line-height: 40px;
+	border:1px solid ;
+	text-align: center;
+	float:right;
+}
+
+.btnBlue
+{/*藍按鈕*/
+	color: white;
+	background-color: #0096ff;
+	margin-left: 10px;
+	border-color: #0096ff;
+}
+
+.btnWhite
+{/*白按鈕*/
+	border-color: #ddd;
+	background-color: white;
+	color:#6f7b8a;
+}
+
+.mainForm
+{/*中間主要區塊 四周縮排*/
+	padding: 30px 35px;
+}
+
+.camera
+{/*上傳照片按鈕*/
+	display: inline-block;
+	position:relative;
+	width: 250px;
+	height: 175px;
+	background-color: #f7f7f7;
+	border:1px dashed #ddd;
+	margin-bottom: 20px;
+	text-align:center;
+	vertical-align: baseline;
+}
+.cameraCover
+{/*內部位置排版*/
+	margin-top: 40px;
+	text-align:center;
+	font-size: 14px;
+	color:#aaa;
+	line-height: 1.6;
+	letter-spacing: 1px;
+}
+.cameraImg
+{/*相機圖片*/
+	margin-bottom: 10px;
+	font-size: 45px;
+	color: #ddd;
+}
+
+.besideImg
+{/*相機右方區塊*/
+	display: inline-block;
+	float:right;
+	height: 210px;
+	width: 440px;
+	vertical-align: top;
+	line-height: 1.6;
+}
+.biBlock
+{/*相機右方區塊 三小塊拼成 此規格亦套用以下項目*/
+	width: 100%;
+	height: 70px;
+	display: flex;
+}
+.titleInfo
+{/*相機右方區塊 標題*/
+	display: inline-block;
+	margin-top: 5px;
+	width: 120px;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:#6f7b8a;
+}
+.infoContent
+{/*相機右方區塊 輸入框設定*/
+	display: inline-block;
+	font-size: 15px;
+	width: calc(100% - 120px);
+	float:right;
+	align-items: center;
+
+}

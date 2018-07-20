@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Homework4</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/hw4.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+</head>
+<body>
+	<header></header>
+	<section>
+	
+		<div class="titleBlock">	
+			<i class="iconColor fas fa-map-marker-alt"></i>
+				<div class="iconContent">
+					提供新路線
+				</div>
+				<a class="btn btnBlue" href="">送出</a>
+				<a class="btn btnWhite" href="">取消</a>
+		</div>
+		<div class="mainForm">
+			<div class="camera">
+				<div class="cameraCover">
+					<i class="cameraImg fa fa-camera"></i>
+					<br>點擊上傳路線封面
+					<br>尺寸建議大於475x342像素
+				</div>
+			</div>		
+			<div class="besideImg">
+				<div class="biBlock">
+					<div class="titleInfo">
+						路線名稱
+						<span class="must-icon">※</span>
+					</div>
+					<div class="infoContent">
+						<input type="text" name="title" placeholder="請輸入路線名稱">
+					</div>
+				</div>
+				<div class="biBlock">
+					<div class="titleInfo">
+						封面來源
+					</div>
+					<div class="infoContent">
+						<input type="text" name="title" placeholder="若上傳封面圖片則必填">
+					</div>
+				</div>
+				<div class="biBlock">
+					<div class="titleInfo">
+						封面網址
+					</div>
+					<div class="infoContent">
+						<input type="text" name="title" placeholder="請提供封面圖片來源">
+					</div>
+				</div>
+			</div>
+			<div style="margin-top: 10px">
+				<div class="biBlock">
+					<div class="titleInfo">
+						路線起點
+						<span class="must-icon">※</span>
+					</div>				
+					<div class="infoContent">
+						<select name="city" id="city_selector" class="placeHolder";>
+							<option value selected="true" disabled="disabled">請選擇縣市</option>
+						</select>	
+						<select class="left placeHolder" name="city" id="city_selector";">
+							<option value selected="true" disabled="disabled">請選擇區域</option>
+						</select>		
+					</div>
+
+				</div>
+			</div>
+			<div class="biBlock">
+					<div class="titleInfo">
+						路線類型
+						<span class="must-icon">※</span>
+					</div>				
+					
+			</div>
+		</div>
+	</section>
+</body>
+</html>
