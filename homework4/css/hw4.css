@@ -9,6 +9,8 @@ a:hover
 }
 section
 {
+	position: relative;
+	
 	margin:49px auto auto auto;
 	height: 939px;
 	width: 780px;
@@ -20,14 +22,13 @@ header
 	height: 130px;
 	background-color: white;
 }
-.placeHolder
-{
-	color:#bbb;
-}
+
 input::-webkit-input-placeholder {
     color: #AAA;
 }
-
+textarea::-webkit-input-placeholder {
+    color: #AAA;
+}
 input
 {/*input區塊 統一樣式*/
 -webkit-appearance: none;
@@ -38,8 +39,20 @@ input
 	line-height: 1.4;
 	padding: 8px;
 	border-radius: 3px;
+	float: right;
 }
-
+textarea
+{
+	height: 230px;
+	width: 100%;
+	max-width: 100%;
+	outline: none;
+	border:1px solid #ddd;
+	font-size: 15px;
+	line-height: 1.4;
+	padding: 8px;
+	border-radius: 3px;
+}
 select
 {
 	display: inline-block;
@@ -52,6 +65,20 @@ select
 	background-image:url("../img/select_arrow.png");
 	background-position: calc(100% - 13px) 50%;
 	-webkit-appearance: none;
+}
+label
+{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.placeHolder
+{
+	color:#bbb;
+}
+.top
+{
+	margin-top: 10px;
 }
 .left
 {
@@ -130,6 +157,7 @@ select
 	text-align:center;
 	vertical-align: baseline;
 }
+
 .cameraCover
 {/*內部位置排版*/
 	margin-top: 40px;
@@ -159,7 +187,7 @@ select
 {/*相機右方區塊 三小塊拼成 此規格亦套用以下項目*/
 	width: 100%;
 	height: 70px;
-	display: flex;
+	display: inline-block;
 }
 .titleInfo
 {/*相機右方區塊 標題*/
@@ -178,5 +206,62 @@ select
 	width: calc(100% - 120px);
 	float:right;
 	align-items: center;
+}
+.width
+{
+	width: 430px;
+}
 
+.bottom
+{
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	bottom: 0px;
+	padding: 20px 35px;
+	background-color: #f3f3f3;
+}
+
+.routePos
+{
+	height: 159px;
+	margin-top: 75px;
+}
+.btn-radio
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	padding-top: 4px;
+	font-size: 15px;
+	color:#6f7b8a;
+	cursor: pointer;
+	line-height: 1;
+}
+.btn-radio::before
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+
+	width: 24px;
+	height: 24px;
+	border:1px solid #d3d3d3;
+	background-color: #f7f7f7;
+	content:"";
+	border-radius: 50%;
+}
+.btn-radio::after
+
+{
+	position: absolute;
+	top:9px;
+	left:5px;
+	z-index: 2;
+	display: block;
+	width: 14px;
+	height: 14px;
+	content: "";
+	border-radius: 50%;
 }

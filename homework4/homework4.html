@@ -5,12 +5,17 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/hw4.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<script>
+	$('btn-radio').click(function (e){
+		$(this).parent().find("btn-radio").removeClass("is-acted");
+		$(this).toggleClass("is-acted");
+	});
 
+</script>
 </head>
 <body>
 	<header></header>
 	<section>
-	
 		<div class="titleBlock">	
 			<i class="iconColor fas fa-map-marker-alt"></i>
 				<div class="iconContent">
@@ -20,13 +25,16 @@
 				<a class="btn btnWhite" href="">取消</a>
 		</div>
 		<div class="mainForm">
+			<label>	
 			<div class="camera">
 				<div class="cameraCover">
-					<i class="cameraImg fa fa-camera"></i>
+					<i class="cameraImg fa fa-camera">
+					</i><input type="file" style="display: none">
 					<br>點擊上傳路線封面
 					<br>尺寸建議大於475x342像素
 				</div>
 			</div>		
+			</label>
 			<div class="besideImg">
 				<div class="biBlock">
 					<div class="titleInfo">
@@ -54,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: 10px">
+			<div class="top">
 				<div class="biBlock">
 					<div class="titleInfo">
 						路線起點
@@ -76,9 +84,59 @@
 						路線類型
 						<span class="must-icon">※</span>
 					</div>				
+					<div class="infoContent">
+						<div class="btn-radio">
+							河濱
+						</div>
+						<div class="btn-radio">
+							越野
+						</div>
+						<div class="btn-radio">
+							市區道路
+						</div>
+						<div class="btn-radio">
+							運動場/公園
+						</div>
+					</div>
 					
 			</div>
+			<div class="biBlock">
+				<div class="titleInfo">
+					距離(km)
+					<span class="must-icon">※</span>
+				</div>
+					<div class="infoContent">
+						<select  name="city" id="city_selector";>
+							<option value selected="true" disabled="disabled">距離範圍</option>
+						</select>		
+						<div class="infoContent width" >
+							<input type="text" name="title" placeholder="範圍說明，範例：大安森林公園外磚 大約 2K">
+						</div>
+					</div>
+			</div>				
+			<div class="biBlock">
+				<div class="titleInfo">
+					相關賽事
+				</div>
+				<div class="infoContent">			
+					<input type="text" name="title" placeholder="輸入賽事關鍵字">
+				</div>
+			</div>	
+			<div class="biBlock">
+				<div class="titleInfo routePos" >
+					路線簡介
+				</div>
+				<div class="infoContent" >			
+					<textarea name="" id cols="30" rows="10" placeholder="請輸入路線簡介"></textarea>
+				</div>
+			</div>	
 		</div>
+			
+				
+			<div class="bottom">
+				<a class="btn btnBlue" href="">送出</a>
+				<a class="btn btnWhite" href="">取消</a>
+			</div>
 	</section>
 </body>
 </html>
