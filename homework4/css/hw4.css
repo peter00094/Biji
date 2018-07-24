@@ -10,16 +10,9 @@ a:hover
 section
 {
 	position: relative;
-	
 	margin:49px auto auto auto;
-	height: 939px;
+	height: 988px;
 	width: 780px;
-	background-color: white;
-}
-header
-{
-	width: 100%;
-	height: 130px;
 	background-color: white;
 }
 
@@ -31,7 +24,8 @@ textarea::-webkit-input-placeholder {
 }
 input
 {/*input區塊 統一樣式*/
--webkit-appearance: none;
+	height: 35px;
+	-webkit-appearance: none;
 	width: 100%;
 	outline: none;
 	border: 1px solid #ddd;
@@ -39,11 +33,10 @@ input
 	line-height: 1.4;
 	padding: 8px;
 	border-radius: 3px;
-	float: right;
 }
 textarea
 {
-	height: 230px;
+	height: 150px;
 	width: 100%;
 	max-width: 100%;
 	outline: none;
@@ -72,18 +65,17 @@ label
 	height: 100%;
 	cursor: pointer;
 }
+
 .placeHolder
 {
 	color:#bbb;
 }
-.top
-{
-	margin-top: 10px;
-}
+
 .left
 {
 	margin-left: 10px;
 }
+
 .must-icon
 {
 	font-size: 12px;
@@ -96,13 +88,17 @@ label
 {
 	color: #c8c8c8;
 }
+
 .titleBlock
 {/*"提供新路線"區塊*/
+	position: relative;
 	height: 80px;
 	width: 100%;
 	background-color: #f3f3f3;
 	padding: 20px 35px;
+	
 }
+
 
 .iconContent
 {/*"左方文字+icon*/
@@ -143,6 +139,7 @@ label
 .mainForm
 {/*中間主要區塊 四周縮排*/
 	padding: 30px 35px;
+	height: calc(100% - 109px);
 }
 
 .camera
@@ -158,6 +155,12 @@ label
 	vertical-align: baseline;
 }
 
+.bottom
+{
+	position: absolute;
+	bottom:0;
+}
+
 .cameraCover
 {/*內部位置排版*/
 	margin-top: 40px;
@@ -167,6 +170,7 @@ label
 	line-height: 1.6;
 	letter-spacing: 1px;
 }
+
 .cameraImg
 {/*相機圖片*/
 	margin-bottom: 10px;
@@ -176,19 +180,20 @@ label
 
 .besideImg
 {/*相機右方區塊*/
-	display: inline-block;
 	float:right;
 	height: 210px;
 	width: 440px;
 	vertical-align: top;
 	line-height: 1.6;
 }
+
 .biBlock
 {/*相機右方區塊 三小塊拼成 此規格亦套用以下項目*/
 	width: 100%;
 	height: 70px;
 	display: inline-block;
 }
+
 .titleInfo
 {/*相機右方區塊 標題*/
 	display: inline-block;
@@ -199,69 +204,95 @@ label
 	letter-spacing: 1px;
 	color:#6f7b8a;
 }
+
 .infoContent
 {/*相機右方區塊 輸入框設定*/
-	display: inline-block;
+	float:right;
 	font-size: 15px;
 	width: calc(100% - 120px);
-	float:right;
 	align-items: center;
 }
+
 .width
 {
 	width: 430px;
 }
 
-.bottom
-{
-	position: absolute;
-	height: 80px;
-	width: 100%;
-	bottom: 0px;
-	padding: 20px 35px;
-	background-color: #f3f3f3;
-}
 
 .routePos
 {
-	height: 159px;
-	margin-top: 75px;
+	height: 150px;
+	padding-top: 70px;
 }
-.btn-radio
+
+.container 
+{/*整個radio大小 位置*/
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #6f7b8a;
+}
+
+.container input 
+{/*隱藏預設radio*/
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark 
+{/*radio樣式*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark 
+{/*hover變色*/
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark 
+{/*選取變色*/
+    background-color: #2196F3;
+}
+.checkmark:after
+ {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after
 {
-	position: relative;
+    display: block;
+}
+
+.container .checkmark:after 
+{/*hover到的白色小點*/
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.add-btn
+{	
 	display: inline-block;
-	vertical-align: middle;
 	margin-right: 20px;
-	padding-top: 4px;
-	font-size: 15px;
-	color:#6f7b8a;
-	cursor: pointer;
-	line-height: 1;
+	font-weight: bold;
+	font-size: 14px;
+	color:#0096ff;
 }
-.btn-radio::before
+.add
 {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 5px;
-
-	width: 24px;
-	height: 24px;
-	border:1px solid #d3d3d3;
-	background-color: #f7f7f7;
-	content:"";
-	border-radius: 50%;
-}
-.btn-radio::after
-
-{
-	position: absolute;
-	top:9px;
-	left:5px;
-	z-index: 2;
-	display: block;
-	width: 14px;
-	height: 14px;
-	content: "";
-	border-radius: 50%;
+	height: 180px;
 }

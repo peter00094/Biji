@@ -11,10 +11,11 @@
 		$(this).toggleClass("is-acted");
 	});
 
+
+
 </script>
 </head>
 <body>
-	<header></header>
 	<section>
 		<div class="titleBlock">	
 			<i class="iconColor fas fa-map-marker-alt"></i>
@@ -62,7 +63,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="top">
 				<div class="biBlock">
 					<div class="titleInfo">
 						路線起點
@@ -76,27 +76,30 @@
 							<option value selected="true" disabled="disabled">請選擇區域</option>
 						</select>		
 					</div>
-
 				</div>
-			</div>
+
 			<div class="biBlock">
 					<div class="titleInfo">
 						路線類型
 						<span class="must-icon">※</span>
 					</div>				
 					<div class="infoContent">
-						<div class="btn-radio">
-							河濱
-						</div>
-						<div class="btn-radio">
-							越野
-						</div>
-						<div class="btn-radio">
-							市區道路
-						</div>
-						<div class="btn-radio">
-							運動場/公園
-						</div>
+					<label class="container">河濱
+					  <input type="radio" class="short" checked="checked" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+						<label class="container">越野
+					  <input type="radio" class="short" checked="checked" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+						<label class="container">市區道路
+					  <input type="radio" class="short" checked="checked" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+							<label class="container">運動場/公園
+					  <input type="radio"  checked="checked" name="radio">
+					  <span class="checkmark"></span>
+					</label>
 					</div>
 					
 			</div>
@@ -122,21 +125,37 @@
 					<input type="text" name="title" placeholder="輸入賽事關鍵字">
 				</div>
 			</div>	
-			<div class="biBlock">
+			<div class="biBlock add">
 				<div class="titleInfo routePos" >
 					路線簡介
 				</div>
 				<div class="infoContent" >			
 					<textarea name="" id cols="30" rows="10" placeholder="請輸入路線簡介"></textarea>
 				</div>
-			</div>	
-		</div>
-			
-				
-			<div class="bottom">
+			</div>
+			<div class="biBlock">
+				<div class="add-btn">
+					<i class="fa fa-upload"></i>
+					上傳GPX
+				</div>
+				<div class="add-btn">
+					<i class="fa fa-car"></i>
+					添加交通方式
+				</div>
+				<div class="add-btn">
+					<i class="fa fa-road"></i>
+					添加路面狀況說明
+				</div>
+			</div>
+
+		</div>	
+			<div class="titleBlock bottom">
 				<a class="btn btnBlue" href="">送出</a>
 				<a class="btn btnWhite" href="">取消</a>
 			</div>
 	</section>
 </body>
 </html>
+<!-- veralign-middle??
+	 自然生長
+ -->
