@@ -155,12 +155,6 @@ label
 	vertical-align: baseline;
 }
 
-.bottom
-{
-	position: absolute;
-	bottom:0;
-}
-
 .cameraCover
 {/*內部位置排版*/
 	margin-top: 40px;
@@ -218,9 +212,8 @@ label
 	width: 430px;
 }
 
-
 .routePos
-{
+{/*路線簡介 標題區塊*/
 	height: 150px;
 	padding-top: 70px;
 }
@@ -285,7 +278,7 @@ label
 	background: white;
 }
 .add-btn
-{	
+{/*下方藍色選項*/
 	display: inline-block;
 	margin-right: 20px;
 	font-weight: bold;
@@ -293,6 +286,6 @@ label
 	color:#0096ff;
 }
 .add
-{
+{/*路線簡介外框*/
 	height: 180px;
 }
