@@ -139,7 +139,7 @@ label
 .mainForm
 {/*中間主要區塊 四周縮排*/
 	padding: 30px 35px;
-	height: calc(100% - 109px);
+	height: calc(100% - 160px);
 }
 
 .camera
@@ -288,4 +288,8 @@ label
 .add
 {/*路線簡介外框*/
 	height: 180px;
+}
+.bottom
+{
+	bottom: 0px;
 }
