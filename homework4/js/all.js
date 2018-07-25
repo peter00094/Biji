@@ -1,8 +1,4 @@
 $(document).ready(function() {
-	
-$('.titleBlock').click(function(event) 
-{
-});
 
 $('.add-btn:last').click(function(event) {
 	$('.biBlock.add.hide').show();
